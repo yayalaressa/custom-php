@@ -1,25 +1,33 @@
 <?php
+if (!defined('BASEPATH')) die('Access Denied!');
 
-// Render Frontend Twig Template v3
-function render($page = null, $data = [])
-{
-	$loader = new \Twig\Loader\FilesystemLoader(BASEPATH.'/themes/default');
-    $twig = new \Twig\Environment($loader, [
-    'cache' => BASEPATH.'/cache/site',
-    ]);
-    
-    echo $twig->render($page.'.html', $data);
-}
+// Twig Template Engine v3
+class Theme {
 
-// View Admin for Backend Twig Template v3
-function view($page = null, $data = [])
-{
-	$loader = new \Twig\Loader\FilesystemLoader(BASEPATH.'/system/admin/views');
-    $twig = new \Twig\Environment($loader, [
-    'cache' => BASEPATH.'/cache/admin',
-    ]);
-    
-    echo $twig->render($page.'.html', $data);
+    public $twig;
+
+    function __construct() {
+        $loader = new \Twig\Loader\FilesystemLoader(BASEPATH.'/themes/default');
+        $this->twig = new \Twig\Environment($loader, [
+                            'cache' => BASEPATH.'/cache/site',
+                        ]);
+    }
+
+    public function set($set = null) {
+        if($set == 'admin') {
+            $loader = new \Twig\Loader\FilesystemLoader(BASEPATH.'/system/admin/views');
+            $this->twig = new \Twig\Environment($loader, [
+                                'cache' => BASEPATH.'/cache/admin',
+                            ]);
+            return $this;
+        } else {
+            error(500, 'Error rendering theme!');
+        }
+    }
+
+    public function render($page = null, $data = array()) {
+        echo $this->twig->render($page.'.html', $data);
+    }
 }
 
 ?>

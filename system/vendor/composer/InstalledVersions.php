@@ -27,24 +27,24 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '29607f5449b198719460ed30b7eb9004c5e7fcec',
     'name' => '__root__',
   ),
   'versions' => 
   array (
     '__root__' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '29607f5449b198719460ed30b7eb9004c5e7fcec',
     ),
     'bhaktaraz/php-rss-generator' => 
     array (
@@ -74,6 +74,15 @@ private static $installed = array (
       ),
       'reference' => '6b4c127dde91e087df22f0fb93d41c024d9996f9',
     ),
+    'michelf/php-markdown' => 
+    array (
+      'pretty_version' => '1.9.0',
+      'version' => '1.9.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c83178d49e372ca967d1a8c77ae4e051b3a3c75c',
+    ),
     'phpmailer/phpmailer' => 
     array (
       'pretty_version' => 'v6.4.1',
@@ -82,6 +91,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '9256f12d8fb0cd0500f93b19e18c356906cbed3d',
+    ),
+    'rakit/validation' => 
+    array (
+      'pretty_version' => 'v1.4.0',
+      'version' => '1.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ff003a35cdf5030a5f2482299f4c93f344a35b29',
     ),
     'symfony/polyfill-ctype' => 
     array (

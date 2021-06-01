@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ee435cfe30be1218208a8c09c94734d",
+    "content-hash": "5621e0cb47c7d2b106e024c3475c8781",
     "packages": [
         {
             "name": "bhaktaraz/php-rss-generator",
@@ -168,6 +168,59 @@
             "time": "2020-10-29T20:25:12+00:00"
         },
         {
+            "name": "michelf/php-markdown",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/michelf/php-markdown.git",
+                "reference": "c83178d49e372ca967d1a8c77ae4e051b3a3c75c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/c83178d49e372ca967d1a8c77ae4e051b3a3c75c",
+                "reference": "c83178d49e372ca967d1a8c77ae4e051b3a3c75c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.3 <5.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Michelf\\": "Michelf/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "https://michelf.ca/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "John Gruber",
+                    "homepage": "https://daringfireball.net/"
+                }
+            ],
+            "description": "PHP Markdown",
+            "homepage": "https://michelf.ca/projects/php-markdown/",
+            "keywords": [
+                "markdown"
+            ],
+            "support": {
+                "issues": "https://github.com/michelf/php-markdown/issues",
+                "source": "https://github.com/michelf/php-markdown/tree/1.9.0"
+            },
+            "time": "2019-12-02T02:32:27+00:00"
+        },
+        {
             "name": "phpmailer/phpmailer",
             "version": "v6.4.1",
             "source": {
@@ -244,26 +297,32 @@
             "time": "2021-04-29T12:25:04+00:00"
         },
         {
-            "name": "plasticbrain/php-flash-messages",
-            "version": "v1.0.1",
+            "name": "rakit/validation",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/plasticbrain/PhpFlashMessages.git",
-                "reference": "b565762619342057ce561de20d0f2f6e14f9aa77"
+                "url": "https://github.com/rakit/validation.git",
+                "reference": "ff003a35cdf5030a5f2482299f4c93f344a35b29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/plasticbrain/PhpFlashMessages/zipball/b565762619342057ce561de20d0f2f6e14f9aa77",
-                "reference": "b565762619342057ce561de20d0f2f6e14f9aa77",
+                "url": "https://api.github.com/repos/rakit/validation/zipball/ff003a35cdf5030a5f2482299f4c93f344a35b29",
+                "reference": "ff003a35cdf5030a5f2482299f4c93f344a35b29",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "ext-mbstring": "*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpunit/phpunit": "^6.5",
+                "squizlabs/php_codesniffer": "^3"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Plasticbrain\\FlashMessages\\": "src/"
+                    "Rakit\\Validation\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -272,22 +331,16 @@
             ],
             "authors": [
                 {
-                    "name": "Mike Everhart",
-                    "email": "mike@plasticbrain.net"
+                    "name": "Muhammad Syifa",
+                    "email": "emsifa@gmail.com"
                 }
             ],
-            "description": "A modern take on PHP session-based flash messages",
-            "keywords": [
-                "bootstrap",
-                "flash",
-                "messages",
-                "session"
-            ],
+            "description": "PHP Laravel like standalone validation library",
             "support": {
-                "issues": "https://github.com/plasticbrain/PhpFlashMessages/issues",
-                "source": "https://github.com/plasticbrain/PhpFlashMessages/tree/master"
+                "issues": "https://github.com/rakit/validation/issues",
+                "source": "https://github.com/rakit/validation/tree/v1.4.0"
             },
-            "time": "2016-04-01T08:39:38+00:00"
+            "time": "2020-08-27T05:07:01+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",

@@ -1,19 +1,39 @@
 <?php
+if (!defined('BASEPATH')) die('Access Denied!');
 
-// This route handling function will only be executed when visiting http(s)://www.example.org/
-$router->get('/', function() {
+// Load the configuration file
+config('source', $config_file);
+
+// Index
+$router->get('/', function() use($theme) {
 	$data['hello'] = 'Hello World!';
-	render('home', $data);
+	$theme->render('home', $data);
 });
 
-// This route handling function will only be executed when visiting http(s)://www.example.org/
-$router->get('/admin', function() {
+// Post
+$router->get('/post(/[a-z0-9_-]+)?', function($slug = null) {
+    if (!$slug) { echo 'Blog day overview'; return; }
+    echo 'Post ' . htmlentities($slug) . ' detail';
+});
+
+// Profil
+$router->get('/profile/{username}', function($username) {
+    echo 'Profile #' . $username;
+});
+
+// Tag
+$router->get('/tag(/[a-z0-9_.]+)?', function($tag) {
+    echo 'Tag #' . $tag;
+});
+
+// Admin
+$router->get('/admin', function() use($theme) {
 	$data['hello'] = 'Hello Administrator!';
-	view('home', $data);
+	$theme->set('admin')->render('home', $data); // admin render 
 });
 
-// This route handling function will only be executed when visiting http(s)://www.example.org/about
-$router->get('/about', function() {
+// Login
+$router->get('/login', function() {
     echo 'About Page Contents';
 });
 
@@ -30,5 +50,8 @@ $router->before('GET|POST', '/admin/.*', function() {
         exit();
     }
 });
+
+// Run it!
+$router->run();
 
 ?>

@@ -11,10 +11,13 @@
         "twig/twig": "^3.0",
         "faapz/pdo": "^2.1",
         "bhaktaraz/php-rss-generator": "dev-master",
-        "phpmailer/phpmailer": "^6.4"
+        "phpmailer/phpmailer": "^6.4",
+        "rakit/validation": "^1.4",
+        "michelf/php-markdown": "^1.9"
     },
     "autoload": {
 		"files": [
+			"vqmod/vqmod.php",
 			"system/includes/admin.php",
 			"system/includes/database.php",
 			"system/includes/functions.php",

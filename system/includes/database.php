@@ -1,4 +1,5 @@
 <?php
+if (!defined('BASEPATH')) die('Access Denied!');
 
 /*
 // PDO Database
