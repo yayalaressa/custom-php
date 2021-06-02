@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5621e0cb47c7d2b106e024c3475c8781",
+    "content-hash": "223a932e1b9c288eddf456c80137822b",
     "packages": [
         {
             "name": "bhaktaraz/php-rss-generator",
@@ -586,7 +586,9 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.3"
+    },
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.3"

@@ -12,9 +12,6 @@
 			"role": "Developer"
 		}
 	],
-	"require": {
-		"php": ">=7.3"
-	},
     "config": {
 		"vendor-dir": "system/vendor/",
 		"optimize-autoloader": true,
@@ -23,6 +20,7 @@
 		}
 	},
     "require": {
+        "php": ">=7.3",
         "bramus/router": "~1.5",
         "twig/twig": "^3.0",
         "faapz/pdo": "^2.1",

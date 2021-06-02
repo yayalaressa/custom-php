@@ -6,20 +6,11 @@
     'aliases' => 
     array (
     ),
-    'reference' => '84c23e3b3e25cf36aab41761f060c2692799cdb2',
-    'name' => '__root__',
+    'reference' => 'cf97034fff84ce686f2679857b9f221989ed960e',
+    'name' => 'yayalaressa/custom-php',
   ),
   'versions' => 
   array (
-    '__root__' => 
-    array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '84c23e3b3e25cf36aab41761f060c2692799cdb2',
-    ),
     'bhaktaraz/php-rss-generator' => 
     array (
       'pretty_version' => 'dev-master',
@@ -101,6 +92,15 @@
       array (
       ),
       'reference' => '21578f00e83d4a82ecfa3d50752b609f13de6790',
+    ),
+    'yayalaressa/custom-php' => 
+    array (
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'cf97034fff84ce686f2679857b9f221989ed960e',
     ),
   ),
 );
