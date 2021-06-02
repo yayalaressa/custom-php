@@ -4,6 +4,7 @@
 	"description": "Custom OOP PHP Native",
 	"homepage": "https://yaya.my.id/",
 	"keywords": ["php native", "oop-principles", "framework-php", "oop-examples"],
+	"license": "MIT",
 	"authors": [
 		{
 			"name": "Yaya Laressa",
