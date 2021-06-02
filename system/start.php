@@ -1,6 +1,26 @@
 <?php
 if (!defined('BASEPATH')) die('Access Denied!');
 
+$router->set404(function() {
+    header('HTTP/1.1 404 Not Found');
+    // ... do something special here
+    echo 'HTTP/1.1 404 Not Found';
+});
+
+// Subrouting
+$router->mount('/movies', function() use ($router) {
+    // will result in '/movies/'
+    $router->get('/', function() {
+        echo 'movies overview';
+    });
+
+    // will result in '/movies/id'
+    $router->get('/(\d+)', function($id) {
+        echo 'movie id ' . htmlentities($id);
+    });
+    
+});
+
 // Index
 $router->get('/', function() use($app) {
 	$data['hello'] = 'Hello World!';
@@ -40,12 +60,6 @@ $router->before('GET|POST', '/admin/.*', function() {
         header('location: /login');
         exit();
     }
-});
-
-// Error Handling
-$router->set404(function() {
-    header('HTTP/1.1 404 Not Found');
-    echo '404 Not Found';
 });
 
 // Run it!

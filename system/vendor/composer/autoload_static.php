@@ -13,6 +13,7 @@ class ComposerStaticInit64efc1d9473c969ffb0dd354c31d564b
         '8432047aca7938f88a2098a2f7770228' => __DIR__ . '/../../..' . '/system/admin/admin.php',
         'd6ecadb34aa3cb850a839144c6cfc680' => __DIR__ . '/../../..' . '/system/core/database.php',
         '513c8a64047245b538e114e9eb5635df' => __DIR__ . '/../../..' . '/system/core/functions.php',
+        '6d1a13a7e8551b2995bff077bec40329' => __DIR__ . '/../../..' . '/system/core/security.php',
         'dd24939e7d83376402536023d5a6f57d' => __DIR__ . '/../../..' . '/system/core/session.php',
         'c4ee05de813d79f3047aaa7a0f829823' => __DIR__ . '/../../..' . '/system/model/app.php',
     );

@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '25f9901d9c132cc8939718f0248d1e662b8f0c11',
+    'reference' => '84c23e3b3e25cf36aab41761f060c2692799cdb2',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '25f9901d9c132cc8939718f0248d1e662b8f0c11',
+      'reference' => '84c23e3b3e25cf36aab41761f060c2692799cdb2',
     ),
     'bhaktaraz/php-rss-generator' => 
     array (

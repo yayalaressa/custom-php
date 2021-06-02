@@ -12,7 +12,7 @@ $router = new \Bramus\Router\Router();
 $admin = new Admin();
 // Load model Application
 $app = new App();
-// vQmod
+// Start
 VQMod::bootup();
 require_once(VQMod::modCheck(BASEPATH . '/system/start.php'));
 

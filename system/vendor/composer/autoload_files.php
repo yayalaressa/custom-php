@@ -12,6 +12,7 @@ return array(
     '8432047aca7938f88a2098a2f7770228' => $baseDir . '/system/admin/admin.php',
     'd6ecadb34aa3cb850a839144c6cfc680' => $baseDir . '/system/core/database.php',
     '513c8a64047245b538e114e9eb5635df' => $baseDir . '/system/core/functions.php',
+    '6d1a13a7e8551b2995bff077bec40329' => $baseDir . '/system/core/security.php',
     'dd24939e7d83376402536023d5a6f57d' => $baseDir . '/system/core/session.php',
     'c4ee05de813d79f3047aaa7a0f829823' => $baseDir . '/system/model/app.php',
 );
