@@ -12,7 +12,4 @@ if(PHP_VERSION_ID < 70300) {
 if (isset($_COOKIE['PHPSESSID']))
     session_start();
 
-// Start time page rendered
-$_SESSION['elapsed_time'] = microtime(true);
-
 ?>

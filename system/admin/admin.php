@@ -20,7 +20,7 @@ class Admin {
 	
 	public function render($page = null, $data = array()) {
 		// Page rendered time
-    	$time_taken = (microtime(true) - $_SESSION['elapsed_time']);
+    	$time_taken = (microtime(true) - $_SERVER['REQUEST_TIME_FLOAT']);
     	$data['elapsed_time'] = round($time_taken,4);
         // Display
 		echo $this->twig->render($page.'.html', $data);

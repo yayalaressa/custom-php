@@ -8,11 +8,11 @@ $baseDir = dirname(dirname($vendorDir));
 return array(
     '320cde22f66dd4f5d3fd621d3e88b98f' => $vendorDir . '/symfony/polyfill-ctype/bootstrap.php',
     '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => $vendorDir . '/symfony/polyfill-mbstring/bootstrap.php',
-    '7d23192ab2125f154a72ad88be03a384' => $baseDir . '/system/core/session.php',
     '4b6a360b3d3a31a562087fbeb2763a84' => $baseDir . '/system/core/cache.php',
-    '105390912cfdfc183f9d752d42683cf8' => $baseDir . '/system/core/database.php',
+    '7d23192ab2125f154a72ad88be03a384' => $baseDir . '/system/core/session.php',
     '0c0454e6a5268798c7c2c58542467acf' => $baseDir . '/system/core/functions.php',
     'f8e9a546c9158df9768f47851fa469c6' => $baseDir . '/system/core/security.php',
+    '105390912cfdfc183f9d752d42683cf8' => $baseDir . '/system/core/database.php',
     'd310f25933dd73991eb719dad1a10220' => $baseDir . '/system/libraries/minifier.php',
     '02c9661f8525e4ff443ce0c4a0ef0455' => $baseDir . '/system/admin/admin.php',
     '2663c31b1f16c9b10d0bf8474d4fe0db' => $baseDir . '/system/model/app.php',
