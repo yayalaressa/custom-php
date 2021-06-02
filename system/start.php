@@ -12,7 +12,7 @@ $router->before('GET|POST', '/admin/.*', function() {
 // Subrouting Admin
 $router->mount('/admin', function() use ($router, $admin) {
 	
-	$router->get('/', function() use($admin) {
+	$router->get('/dashboard', function() use($admin) {
         $data['hello'] = 'Hello Administrator!';
         $admin->render('home', $data); // admin render 
     });
@@ -62,8 +62,37 @@ $router->get('/tag(/[a-z0-9_.]+)?', function($tag) {
 });
 
 // Login
-$router->get('/login', function() {
-    echo 'About Page Contents';
+$router->mount('/member', function() use($router, $app) {
+    
+	$router->get('/login', function() use($app) {
+        $data['hello'] = 'Login!';
+        $app->render('home', $data); // admin render 
+    });
+	
+    $router->get('/logout', function() {
+        echo 'movies overview';
+    });
+
+    $router->get('/registration', function() {
+        echo 'movies overview';
+    });
+
+    $router->get('/forgot_password', function() {
+        echo 'movies overview';
+    });
+
+    $router->get('/reset_password', function() {
+        echo 'movies overview';
+    });
+
+    $router->get('/activation', function() {
+        echo 'movies overview';
+    });
+
+    $router->get('/edit_post/(\d+)', function($id) {
+        echo 'movie id ' . htmlentities($id);
+    });
+    
 });
 
 // Error Handling

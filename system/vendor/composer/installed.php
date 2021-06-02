@@ -7,7 +7,7 @@
     array (
       0 => '1.8.x-dev',
     ),
-    'reference' => '3f5157053e8dcc77f50e245b8cc857d1a5c3b08a',
+    'reference' => 'c4ee1f47558d56ec3fe75a2a490bcf081c81a655',
     'name' => 'yayalaressa/custom-php',
   ),
   'versions' => 
@@ -102,7 +102,7 @@
       array (
         0 => '1.8.x-dev',
       ),
-      'reference' => '3f5157053e8dcc77f50e245b8cc857d1a5c3b08a',
+      'reference' => 'c4ee1f47558d56ec3fe75a2a490bcf081c81a655',
     ),
   ),
 );
