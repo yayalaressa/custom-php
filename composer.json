@@ -39,5 +39,10 @@
 			"system/core/session.php",
 			"system/model/app.php"
 		]
-	}
+	},
+    "extra": {
+        "branch-alias": {
+            "dev-master": "v1.8"
+        }
+    }
 }

@@ -32,7 +32,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '5dd8fec0eeb4f4438e332a7441fbde8d32ca31a7',
+    'reference' => 'af78011f15d16efc6ec3c5f0d68f378d5bab30d2',
     'name' => 'yayalaressa/custom-php',
   ),
   'versions' => 
@@ -126,7 +126,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '5dd8fec0eeb4f4438e332a7441fbde8d32ca31a7',
+      'reference' => 'af78011f15d16efc6ec3c5f0d68f378d5bab30d2',
     ),
   ),
 );
