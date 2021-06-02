@@ -10,11 +10,11 @@ class ComposerStaticInit64efc1d9473c969ffb0dd354c31d564b
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'bc6aa2a70aba5f101118be551cdecc21' => __DIR__ . '/../../..' . '/vqmod/vqmod.php',
-        '4745eeea203c6fdd5216bad125888145' => __DIR__ . '/../../..' . '/system/includes/admin.php',
-        '18ceb49f36bca647bc3b3846fca4efb1' => __DIR__ . '/../../..' . '/system/includes/database.php',
-        'f770a6f41af7b4285303bdcc4ff87ba7' => __DIR__ . '/../../..' . '/system/includes/functions.php',
-        '1b9bf2d9d029f1364c3d7262b5375c41' => __DIR__ . '/../../..' . '/system/includes/session.php',
-        '982657b8a2ccbd48cda9dbb7adcbe377' => __DIR__ . '/../../..' . '/system/includes/theme.php',
+        '8432047aca7938f88a2098a2f7770228' => __DIR__ . '/../../..' . '/system/admin/admin.php',
+        'd6ecadb34aa3cb850a839144c6cfc680' => __DIR__ . '/../../..' . '/system/core/database.php',
+        '513c8a64047245b538e114e9eb5635df' => __DIR__ . '/../../..' . '/system/core/functions.php',
+        'dd24939e7d83376402536023d5a6f57d' => __DIR__ . '/../../..' . '/system/core/session.php',
+        'c4ee05de813d79f3047aaa7a0f829823' => __DIR__ . '/../../..' . '/system/model/app.php',
     );
 
     public static $prefixLengthsPsr4 = array (

@@ -18,11 +18,11 @@
     "autoload": {
 		"files": [
 			"vqmod/vqmod.php",
-			"system/includes/admin.php",
-			"system/includes/database.php",
-			"system/includes/functions.php",
-			"system/includes/session.php",
-			"system/includes/theme.php"
+			"system/admin/admin.php",
+			"system/core/database.php",
+			"system/core/functions.php",
+			"system/core/session.php",
+			"system/model/app.php"
 		]
 	}
 }

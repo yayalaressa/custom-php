@@ -1,13 +1,10 @@
 <?php
 if (!defined('BASEPATH')) die('Access Denied!');
 
-// Load the configuration file
-config('source', $config_file);
-
 // Index
-$router->get('/', function() use($theme) {
+$router->get('/', function() use($app) {
 	$data['hello'] = 'Hello World!';
-	$theme->render('home', $data);
+	$app->render('home', $data);
 });
 
 // Post
@@ -27,9 +24,9 @@ $router->get('/tag(/[a-z0-9_.]+)?', function($tag) {
 });
 
 // Admin
-$router->get('/admin', function() use($theme) {
+$router->get('/admin', function() use($admin) {
 	$data['hello'] = 'Hello Administrator!';
-	$theme->set('admin')->render('home', $data); // admin render 
+	$admin->render('home', $data); // admin render 
 });
 
 // Login
@@ -37,18 +34,18 @@ $router->get('/login', function() {
     echo 'About Page Contents';
 });
 
+// Middleware
+$router->before('GET|POST', '/admin/.*', function() {
+    if (!isset($_SESSION['user'])) {
+        header('location: /login');
+        exit();
+    }
+});
+
 // Error Handling
 $router->set404(function() {
     header('HTTP/1.1 404 Not Found');
     echo '404 Not Found';
-});
-
-// Middleware
-$router->before('GET|POST', '/admin/.*', function() {
-    if (!isset($_SESSION['user'])) {
-        header('location: /auth/login');
-        exit();
-    }
 });
 
 // Run it!
