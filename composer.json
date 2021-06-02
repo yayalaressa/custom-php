@@ -31,13 +31,15 @@
     },
     "autoload": {
 		"files": [
-			"vqmod/vqmod.php",
-			"system/admin/admin.php",
+			"system/core/session.php",
+			"system/core/cache.php",
 			"system/core/database.php",
 			"system/core/functions.php",
 			"system/core/security.php",
-			"system/core/session.php",
-			"system/model/app.php"
+			"system/libraries/minifier.php",
+			"system/admin/admin.php",
+			"system/model/app.php",
+			"vqmod/vqmod.php"
 		]
 	},
     "extra": {

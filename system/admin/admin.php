@@ -7,9 +7,7 @@ class Admin {
 	
 	function __construct() {
 		$loader = new \Twig\Loader\FilesystemLoader(BASEPATH.'/system/admin/views');
-        $this->twig = new \Twig\Environment($loader, [
-                                'cache' => BASEPATH.'/cache/admin',
-                            ]);
+        $this->twig = new \Twig\Environment($loader);
 	}
 	
 	public function add_post() {
@@ -21,6 +19,10 @@ class Admin {
 	}
 	
 	public function render($page = null, $data = array()) {
+		// Page rendered time
+    	$time_taken = (microtime(true) - $_SESSION['elapsed_time']);
+    	$data['elapsed_time'] = round($time_taken,4);
+        // Display
 		echo $this->twig->render($page.'.html', $data);
 	}
 	

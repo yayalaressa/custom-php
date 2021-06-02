@@ -6,6 +6,10 @@ define('BASEPATH', dirname(__FILE__));
 require_once BASEPATH . '/system/vendor/autoload.php';
 // Load the configuration file
 config('source', BASEPATH . '/config/config.ini');
+// Display cache
+display();
+// if no cache, callback cache
+ob_start('cache');
 // Create Router instance
 $router = new \Bramus\Router\Router();
 // Load model Administrator

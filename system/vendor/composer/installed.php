@@ -5,8 +5,9 @@
     'version' => 'dev-master',
     'aliases' => 
     array (
+      0 => '1.8.x-dev',
     ),
-    'reference' => 'af78011f15d16efc6ec3c5f0d68f378d5bab30d2',
+    'reference' => 'a59abcda4aae62943204ebf6e259a5e6cbc7245f',
     'name' => 'yayalaressa/custom-php',
   ),
   'versions' => 
@@ -99,8 +100,9 @@
       'version' => 'dev-master',
       'aliases' => 
       array (
+        0 => '1.8.x-dev',
       ),
-      'reference' => 'af78011f15d16efc6ec3c5f0d68f378d5bab30d2',
+      'reference' => 'a59abcda4aae62943204ebf6e259a5e6cbc7245f',
     ),
   ),
 );
