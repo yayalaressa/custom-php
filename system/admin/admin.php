@@ -24,6 +24,8 @@ class Admin {
     	$data['elapsed_time'] = round($time_taken,4);
         // Display
 		echo $this->twig->render($page.'.html', $data);
+		if(config('minify.enable') == 'true') echo Minifier::html($html);
+        else echo $html;
 	}
 	
 }

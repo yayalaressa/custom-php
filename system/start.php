@@ -1,12 +1,6 @@
 <?php
 if (!defined('BASEPATH')) die('Access Denied!');
 
-$router->set404(function() {
-    header('HTTP/1.1 404 Not Found');
-    // ... do something special here
-    echo 'HTTP/1.1 404 Not Found';
-});
-
 // Middleware Admin
 $router->before('GET|POST', '/admin/.*', function() {
     if (!isset($_SESSION['user'])) {
@@ -70,6 +64,23 @@ $router->get('/tag(/[a-z0-9_.]+)?', function($tag) {
 // Login
 $router->get('/login', function() {
     echo 'About Page Contents';
+});
+
+// Error Handling
+$router->get('/api(/.*)?', function() {
+    header('HTTP/1.1 404 Not Found');
+    header('Content-Type: application/json');
+
+    $jsonArray = array();
+    $jsonArray['status'] = "404";
+    $jsonArray['status_text'] = "route not defined";
+
+    echo json_encode($jsonArray, JSON_PRETTY_PRINT);
+});
+
+$router->get('.*', function() {
+    header('HTTP/1.1 404 Not Found');
+    echo 'HTTP/1.1 404 Not Found';
 });
 
 // Run it!

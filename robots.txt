@@ -1,0 +1,30 @@
+User-agent: *
+
+# Disallow directories
+Disallow: /config/
+Disallow: /system/
+Disallow: /themes/
+Disallow: /cache/
+Disallow: /vqmod/
+
+# Disallow files
+Disallow: /changelog.txt
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: /composer.phar
+
+# Disallow paths
+Disallow: /search/
+Disallow: /admin/
+
+# Allow themes
+Allow: /themes/*/css/
+Allow: /themes/*/images/
+Allow: /themes/*/img/
+Allow: /themes/*/js/
+Allow: /themes/*/fonts/
+
+# Allow content images
+Allow: /content/images/*.jpg
+Allow: /content/images/*.png
+Allow: /content/images/*.gif
