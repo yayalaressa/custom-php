@@ -1,4 +1,20 @@
 {
+    "name": "yayalaressa/custom-php",
+	"type": "project",
+	"description": "Custom OOP PHP Native",
+	"homepage": "https://yaya.my.id/",
+	"keywords": ["php framework, php native, web developer"],
+	"authors": [
+		{
+			"name": "Yaya Laressa",
+			"email": "hallo@yaya.my.id",
+			"homepage": "https://yaya.my.id/",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=7.3"
+	},
     "config": {
 		"vendor-dir": "system/vendor/",
 		"optimize-autoloader": true,
