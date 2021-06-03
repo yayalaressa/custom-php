@@ -12,5 +12,5 @@ PHP Native untuk keperluan membuat website dengan tambahan library - library dar
 Installation is possible using Composer
 
 ```
-composer require yayalaressa/custom-php
+composer create-project yayalaressa/custom-php
 ```
