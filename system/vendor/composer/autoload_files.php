@@ -6,10 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname(dirname($vendorDir));
 
 return array(
-    '1b9bf2d9d029f1364c3d7262b5375c41' => $baseDir . '/system/includes/session.php',
-    'f770a6f41af7b4285303bdcc4ff87ba7' => $baseDir . '/system/includes/functions.php',
-    '34134568ddbc556314be3e6d0e60e961' => $baseDir . '/system/includes/security.php',
-    '95f16766a55b5ed12783fd81fda66499' => $baseDir . '/system/core/minifier.php',
-    '9ffc98c5d9a94809fc0299ef0d7cf399' => $baseDir . '/system/core/admin.php',
-    'aa2f891c48b7c1bbc531a7e653f48aa8' => $baseDir . '/system/core/app.php',
+    '3dbe503f0b73e4bc086225a95162d760' => $baseDir . '/system/includes/session.php',
+    '8506a6de1171797e81bf4197f002cef5' => $baseDir . '/system/includes/functions.php',
+    'e3a69a5c28f638fc7e92714268928b9a' => $baseDir . '/system/includes/security.php',
+    '2c810469758b8615e9b4755a80f5ed6c' => $baseDir . '/system/core/minifier.php',
+    '3b8b31fa4e952ccaf2fee18915a824a9' => $baseDir . '/system/core/app.php',
 );

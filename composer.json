@@ -30,7 +30,6 @@
 			"system/includes/functions.php",
 			"system/includes/security.php",
 			"system/core/minifier.php",
-			"system/core/admin.php",
 			"system/core/app.php"
 		]
 	}

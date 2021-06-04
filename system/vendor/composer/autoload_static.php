@@ -7,12 +7,11 @@ namespace Composer\Autoload;
 class ComposerStaticInitf3c4ab80fb0e9d98d131bdbf9861c37a
 {
     public static $files = array (
-        '1b9bf2d9d029f1364c3d7262b5375c41' => __DIR__ . '/../../..' . '/system/includes/session.php',
-        'f770a6f41af7b4285303bdcc4ff87ba7' => __DIR__ . '/../../..' . '/system/includes/functions.php',
-        '34134568ddbc556314be3e6d0e60e961' => __DIR__ . '/../../..' . '/system/includes/security.php',
-        '95f16766a55b5ed12783fd81fda66499' => __DIR__ . '/../../..' . '/system/core/minifier.php',
-        '9ffc98c5d9a94809fc0299ef0d7cf399' => __DIR__ . '/../../..' . '/system/core/admin.php',
-        'aa2f891c48b7c1bbc531a7e653f48aa8' => __DIR__ . '/../../..' . '/system/core/app.php',
+        '3dbe503f0b73e4bc086225a95162d760' => __DIR__ . '/../../..' . '/system/includes/session.php',
+        '8506a6de1171797e81bf4197f002cef5' => __DIR__ . '/../../..' . '/system/includes/functions.php',
+        'e3a69a5c28f638fc7e92714268928b9a' => __DIR__ . '/../../..' . '/system/includes/security.php',
+        '2c810469758b8615e9b4755a80f5ed6c' => __DIR__ . '/../../..' . '/system/core/minifier.php',
+        '3b8b31fa4e952ccaf2fee18915a824a9' => __DIR__ . '/../../..' . '/system/core/app.php',
     );
 
     public static $prefixLengthsPsr4 = array (

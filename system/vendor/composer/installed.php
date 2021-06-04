@@ -1,25 +1,16 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'dev-main',
-    'version' => 'dev-main',
+    'pretty_version' => '1.0.0+no-version-set',
+    'version' => '1.0.0.0',
     'aliases' => 
     array (
     ),
-    'reference' => 'b6a9368277909d954ed556be8ff3518eedbb54d5',
-    'name' => '__root__',
+    'reference' => NULL,
+    'name' => 'yayalaressa/custom-php-beta',
   ),
   'versions' => 
   array (
-    '__root__' => 
-    array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'b6a9368277909d954ed556be8ff3518eedbb54d5',
-    ),
     'bramus/router' => 
     array (
       'pretty_version' => '1.5',
@@ -37,6 +28,15 @@
       array (
       ),
       'reference' => '06129fa0632b5be3ddbc91392e48352faaf31140',
+    ),
+    'yayalaressa/custom-php-beta' => 
+    array (
+      'pretty_version' => '1.0.0+no-version-set',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => NULL,
     ),
   ),
 );
