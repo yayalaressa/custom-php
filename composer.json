@@ -1,4 +1,18 @@
 {
+    "name": "yayalaressa/custom-php-beta",
+	"type": "project",
+	"description": "Custom OOP PHP Native Beta",
+	"homepage": "https://yaya.my.id/",
+	"keywords": ["php native", "oop-principles", "framework-php", "oop-examples"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Yaya Laressa",
+			"email": "hallo@yaya.my.id",
+			"homepage": "https://yaya.my.id/",
+			"role": "Developer"
+		}
+	],
     "config": {
 		"vendor-dir": "system/vendor/",
 		"optimize-autoloader": true,
@@ -19,5 +33,10 @@
 			"system/core/admin.php",
 			"system/core/app.php"
 		]
-	}
+	},
+	"extra": {
+        "branch-alias": {
+            "beta": "v2.8-beta"
+        }
+    }
 }
