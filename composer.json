@@ -1,0 +1,23 @@
+{
+    "config": {
+		"vendor-dir": "system/vendor/",
+		"optimize-autoloader": true,
+		"platform": {
+			"php": "7.3"
+		}
+	},
+    "require": {
+        "bramus/router": "~1.5",
+        "snipworks/php-smtp": "^2.0"
+    },
+    "autoload": {
+		"files": [
+			"system/includes/session.php",
+			"system/includes/functions.php",
+			"system/includes/security.php",
+			"system/core/minifier.php",
+			"system/core/admin.php",
+			"system/core/app.php"
+		]
+	}
+}
