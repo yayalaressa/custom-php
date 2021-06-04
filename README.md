@@ -7,10 +7,6 @@ PHP Native untuk keperluan membuat website dengan tambahan library - library dar
 
 
 
-## Installation
+## Beta
 
-Installation is possible using Composer
-
-```
-composer create-project yayalaressa/custom-php
-```
+Source code ini masih versi Beta.
