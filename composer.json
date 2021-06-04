@@ -33,10 +33,5 @@
 			"system/core/admin.php",
 			"system/core/app.php"
 		]
-	},
-	"extra": {
-        "branch-alias": {
-            "beta": "v2.8-beta-dev"
-        }
-    }
+	}
 }
