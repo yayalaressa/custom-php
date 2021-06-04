@@ -36,7 +36,7 @@
 	},
 	"extra": {
         "branch-alias": {
-            "beta": "v2.8-beta"
+            "beta": "v2.8-beta-dev"
         }
     }
 }
